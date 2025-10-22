@@ -35,6 +35,7 @@ A comprehensive spell checker implementation for Telugu language that identifies
 ✅ **4 Edit Operations** - Implements INSERT, DELETE, SUBSTITUTE, and TRANSPOSE operations  
 ✅ **Dual Memory Architecture** - Main memory (RAM) for active documents, secondary memory (disk) for persistent index  
 ✅ **Auto-Correction** - Automatically corrects documents using top-ranked candidates  
+✅ **Export Functionality** - Exports detailed results to JSON format 
 ✅ **Performance Metrics** - Tracks accuracy, detection rates, and operation statistics
 
 ---
@@ -65,7 +66,7 @@ A comprehensive spell checker implementation for Telugu language that identifies
 ### Dataset Access
 
 Full datasets and generated index files available at:  
-"""https://drive.google.com/drive/folders/1-yJOhP0d0on2vaYXk9QnvT0pG2hklsLY?usp=sharing"""
+**[Google Drive Link](https://drive.google.com/drive/folders/1-yJOhP0d0on2vaYXk9QnvT0pG2hklsLY?usp=sharing)**
 
 **Files included:**
 - `corpus.txt` - Raw web-scraped Telugu content
@@ -92,15 +93,20 @@ Python 3.7 or higher
 
 ### Setup Steps
 
-1. **Clone/Download the project:**
+1. **Clone/Extract the project:**
    ```bash
-   git clone <repository-url>
-   cd telugu-spell-checker
+  git clone https://github.com/VishnuDatta510/Telugu-SpellChecker.git .
    ```
+
+   **OR**
+   
+   - Extract the S20230010083-src.zip
+   - Open in VS Code
 
 2. **Prepare datasets:**
    - Download Wikipedia dump for Telugu
    - Collect corpus data (or use provided corpus.txt)
+   - Download Wikidata.txt and corpus.txt from the drive link provided
    - Place files in project root directory
 
 3. **Verify file structure:**
@@ -122,7 +128,7 @@ Python 3.7 or higher
 ## Project Structure
 
 ```
-telugu-spell-checker/
+S20230010083-src/
 │
 ├── Data Cleaning Scripts
 │   ├── clean_wiki.py                      # Cleans Wikipedia data
@@ -571,6 +577,8 @@ combined_score = (semantic_score × 100) - edit_penalty - length_penalty
 
 1. **`spellcheck_index.pkl`** - Binary vocabulary index (37.67 MB)
 2. **`spellchecker_test_results_*.txt`** - Test execution logs with timestamps
+3. **`export_demo_results.json`** - Sample exported results in JSON format
+4. **`*_results.json`** - User-generated export files from document processing
 
 ### Log File Format
 
