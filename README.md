@@ -95,7 +95,7 @@ Python 3.7 or higher
 
 1. **Clone/Extract the project:**
    ```bash
-  git clone https://github.com/VishnuDatta510/Telugu-SpellChecker.git .
+   git clone https://github.com/VishnuDatta510/Telugu-SpellChecker.git .
    ```
 
    **OR**
