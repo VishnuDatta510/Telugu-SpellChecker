@@ -91,6 +91,45 @@ Python 3.7 or higher
 # No additional installations required
 ```
 
+### Immediate Testing (Quick Start)
+
+**Want to test the spell checker immediately without building the index?**
+
+Follow these steps for quick testing:
+
+1. **Download the pre-built index file:**
+   - Visit the [Google Drive Link](https://drive.google.com/drive/folders/1-yJOhP0d0on2vaYXk9QnvT0pG2hklsLY?usp=sharing)
+   - Download `spellcheck_index.pkl` (~37 MB)
+   - Download `telugu_vocabulary.txt` (optional, for reference)
+   
+   **OR**
+   
+   - Extract `spellcheck_index.pkl` from `S20230010083-src.zip`
+
+2. **Place the files in the project root:**
+   ```
+   S20230010083-src/
+   ├── spellcheck_index.pkl          # Place here
+   ├── telugu_vocabulary.txt         # Place here (optional)
+   ├── telugu_spellchecker.py
+   └── test_spellchecker.py
+   ```
+
+3. **Run the test suite directly:**
+   ```bash
+   python test_spellchecker.py
+   ```
+
+4. **That's it!** The spell checker will:
+   - Load the pre-built index from disk
+   - Run all 5 test cases automatically
+   - Display results in the console
+   - Generate a timestamped log file with detailed results
+
+**Note:** This method skips the data cleaning, tokenization, and merging steps by using the pre-built vocabulary index. Perfect for quick testing and demonstration!
+
+---
+
 ### Setup Steps
 
 1. **Clone/Extract the project:**
